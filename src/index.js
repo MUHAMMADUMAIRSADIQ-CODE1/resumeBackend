@@ -6,7 +6,7 @@ let resumeRoutes = require('./Routes/resumeRoutes.js')
 let app = express();
 app.use(express.json())
 app.use(cors({
-    origin: 'https://resumeaiu.netlify.app/',
+    origin: 'https://resumeaiu.netlify.app',
     credentials: true
 }))
 app.use(CookieParser())
