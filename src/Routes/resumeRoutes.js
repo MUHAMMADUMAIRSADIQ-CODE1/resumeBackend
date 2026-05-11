@@ -7,5 +7,4 @@ const { userMiddleware } = require("../Middlewares/usermiddleware.js");
 
 
 router.post('/resume', userMiddleware, upload.single('resume'), resumeController.resumeAI)
-router.post("/convert", upload.single("file"), resumeController.pdftoIMg)
 module.exports = router
