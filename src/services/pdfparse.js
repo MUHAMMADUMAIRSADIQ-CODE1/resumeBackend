@@ -10,5 +10,5 @@ let pdfParseFunc = async (buffer) => {
     catch(err){
         throw new Error("PDF parsing failed: " + error.message);
     }
-}
+} 
 module.exports = pdfParseFunc
