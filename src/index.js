@@ -9,7 +9,6 @@ app.use(cors({
     origin: 'https://resumeaium.netlify.app',
     credentials: true
 }))
-console.log(process.env.private_api_key)
 app.use(CookieParser())
 app.use("/auth", userRoutes)
 app.use('/api', resumeRoutes)
